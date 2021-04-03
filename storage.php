@@ -39,9 +39,11 @@ function getFileList($dir)
     $d->close();
 
     return $retval;
-    echo $retval;
+    echo $dir;
 }
 ?>
+
+    <p>This is my dir: <?php>$dir = "/home/msreed1811/csi3670/";?></p>
 </body>
 </html>
 
