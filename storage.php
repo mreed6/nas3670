@@ -1,3 +1,8 @@
+<html>
+<head>
+    <title>PHP Test</title>
+</head>
+<body>
 <?PHP
 function getFileList($dir)
 {
@@ -35,3 +40,7 @@ function getFileList($dir)
     return $retval;
 }
 ?>
+</body>
+</html>
+
+
