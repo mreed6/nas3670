@@ -5,7 +5,7 @@
 <body>
 <?php
 
-$dir = '/home/msreed1811/csi3670';
+$dir = '/storage';
 $files = scandir($dir);
 print_r($files);
 ?>
