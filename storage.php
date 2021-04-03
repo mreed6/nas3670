@@ -4,6 +4,7 @@
 </head>
 <body>
 <?PHP
+$dir = "/home/msreed1811/csi3670/";
 function getFileList($dir)
 {
     // array to hold return value
@@ -38,6 +39,7 @@ function getFileList($dir)
     $d->close();
 
     return $retval;
+    echo $retval;
 }
 ?>
 </body>
