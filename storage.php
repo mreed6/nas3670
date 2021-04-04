@@ -7,7 +7,7 @@
         $dir = '/storage';
 
         if($except = opendir($dir.'/')){
-            echo "Looking inside the";
+            echo "Looking inside the ";
             echo $dir . '<br>';
         }
         ?>
@@ -32,11 +32,22 @@
 
             fclose($file);
         }
+
+
         ?>
 
         <form action="#" method="post">
             Write to file:<input type="text" name="text" ><br>
             <input type="submit" name="submit" value="Write to file" ><br>
+        </form>
+
+        <form action="">
+            <?php
+              if(isset($_POST['submit'])){
+                  $open = fopen("/storage/test.txt","r" ) or die ("file does not exist");
+            }
+            ?>
+            <input type="submit" name="open" value="Open file"
         </form>
     </body>
 </html>
