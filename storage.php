@@ -9,10 +9,16 @@
         if($except = opendir($dir.'/')){
             echo "Looking inside the '$dir'" . '<br>';
         }
+        ?>
+        <ul>
+            <?php
+            while($file = readdir($except))
+            {
+                echo $file . '<br>';
+            }
 
-        while($file = readdir($except)){
-            echo $file . '<br>';
-        }
+            ?>
+        </ul>
 
         if(isset($_POST['submit'])){
             $text = $_POST['text'];
