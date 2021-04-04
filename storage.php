@@ -45,6 +45,7 @@
             <?php
               if(isset($_POST['submit'])){
                   $open = fopen("/storage/test.txt","r" ) or die ("file does not exist");
+                  echo fread($open, filesize("storage/test.txt"));
             }
             ?>
             <input type="submit" name="open" value="Open file"
