@@ -7,7 +7,8 @@
         $dir = '/storage';
 
         if($except = opendir($dir.'/')){
-            echo "Looking inside the '$dir'" . '<br>';
+            echo "Looking inside the";
+            echo $dir . '<br>';
         }
         ?>
         <ul>
@@ -20,6 +21,7 @@
             ?>
         </ul>
 
+        <?php
         if(isset($_POST['submit'])){
             $text = $_POST['text'];
             $file = fopen("/storage/test04.txt", "w") or die("file not open");
