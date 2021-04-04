@@ -16,7 +16,7 @@
 
         if(isset($_POST['submit'])){
             $text = $_POST['text'];
-            $file = fopen("test.txt", "w+") or die("file not open");
+            $file = fopen("/storage/test04.txt", "w") or die("file not open");
 
             $inject = $text. "\n";
 
